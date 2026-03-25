@@ -1,0 +1,49 @@
+#Guide .container{
+    background-color: #CAE9DC;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 12px 32px;
+    border-radius: 8px;
+}
+
+
+#Branchselec{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Branchselec div{
+    margin: 16px;
+    text-align: center;
+    border: 1px solid #837F80;
+    border-radius: 8px;
+    
+}
+#Branchselec div a{
+    width: 100%;
+    height: 100%;
+}
+#Branchselec div:hover{
+    box-shadow: 0 4px 6px #E0E0E0;
+    /* box-shadow: none; */
+}
+#Branchselec div img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+#Branchselec div p{
+    /* padding: 0 32px; */
+    margin: 5%;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 490px){
+    #Branchselec{
+        width: 90%;
+        margin: 16px auto;
+    }
+    #Branchselec div{
+        width: 40%;
+    }
+}

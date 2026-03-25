@@ -1,0 +1,278 @@
+/* 全域 */
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    /* margin: 0; */
+    width: 100%;
+    color: #484344;
+    font-family: "Jost","Chiron GoRound TC", sans-serif;
+}
+body {
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #484344;
+}
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #CAE9DC;
+    padding:  0 64px;
+}
+.logo{
+    width: 30%;
+    font-size: 1.5em;
+}
+.logo img{
+    height: 30px;
+}
+.logo>a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: none;
+    height: 100%;
+    font-size: 1.1em;
+    padding: 1%;
+}
+nav{
+    height: 100%;
+}
+.navbar {
+    width: 40%;
+}
+ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    height: 100%;
+}
+nav>ol>li{
+    width: 33.33%;
+    height: 60px;
+    padding: 0 3%;
+}
+nav>ol>li>a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+.navbar>ol>li>a:hover{
+    text-decoration: underline 2px solid;
+}
+.lang{
+    width: 10%;
+}
+.lang>ol>li{
+    width: 100%;
+}
+.lang>ol>li>a{
+    width: 100%;
+    color: #837F80;
+}
+.lang>ol>li>a:hover{
+    text-decoration:none;
+    color: #484344;
+}
+
+
+/* Header ends */
+
+
+.container{
+    width: 80%;
+    margin: 64px auto;
+}
+
+/* Banner */
+#Banner .container{
+    display: flex;
+    justify-content: center;
+}
+#Banner img{
+    width: 100%;
+}
+/* Banner ends */
+
+/* Info */
+#Info .container{
+    border: 2px solid #484344;
+    padding: 16px 32px;
+}
+#Info .container h3{
+    text-align: center;
+    background-color: #FFEA65;
+    font-size: 1.2em;
+    /* border-bottom: 25px solid var(--y-500,#FFEA65); */
+}
+p.more{
+    text-align: end;
+    margin: 0;
+}
+p.more a{
+    color: #837F80;
+}
+p.more a:hover{
+    color: #484344;
+}
+/* Info ends */
+
+/* Main-nav */
+#Main-nav .container ol>li{
+    width: 33.33%;
+    height: 60px;
+    background-color: #015934;
+}
+
+#Main-nav .container ol>li>a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    /* text-decoration: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Main-nav .container ol>li>a:hover{
+    color: #015934;
+    background-color: #CAE9DC;
+}
+/* Main-nav ends */
+
+/* Footer */
+footer{
+    height: 250px;
+    display: flex;
+    margin: auto;
+    background-color: #013D23;
+    color: white;
+    align-items: center;
+    
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+.TCH-info p{
+    margin-bottom: 0;
+}
+footer .branch{
+    width: 40%;
+    /* display: flex;
+    justify-content: center; */
+}
+footer h3{
+    border-bottom: 2px solid white;
+    /* height: 50px; */
+    font-size: 1.3em;
+    text-align: start;
+    width: 100%;
+    margin: 2%;
+    padding: 1% 0;
+}
+footer .branchlist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer h6{
+    border: 1px solid white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1% 3%;
+    margin: 1%;
+}
+footer h6:hover{
+    background-color: #fff;
+    color: #013D23;
+}
+
+/* Pad */
+@media screen and (max-width: 1023px) and (min-width: 491px){
+    .logo {
+        font-size: 1.1em;
+    }
+    nav>ol>li>a{
+        font-size: 1em;
+    }
+    footer{
+        flex-direction: column;
+        height: 700px;
+    }
+    footer .branch{
+    width: 80%;
+}
+    footer th{
+        font-size: 1.1em;
+    }
+}
+
+
+/* Phone */
+@media screen and (max-width: 490px){
+    header{
+        flex-wrap: wrap;
+        padding: 12px 16px;
+    }
+    .logo {
+        font-size: 0.8em;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+    }
+    .navbar {
+        width: 100%;
+        /* flex-direction: column; */
+    }
+    nav ol{
+        flex-direction: column;
+    }
+    nav>ol>li{
+        width: 100%;
+        height: 50px;
+    }
+    nav>ol>li>a{
+        justify-content: center;
+    }
+    .navbar>ol>li>a:hover{
+        background-color: #015934;
+        color: white;
+    }
+    .lang {
+        width: 100%;
+    }
+
+    #Main-nav .container ol{
+        flex-direction: column;
+        
+    }
+    #Main-nav .container ol>li{
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+    footer{
+        flex-direction: column;
+        height: 700px;
+    }
+    footer .branch{
+        width: 80%;
+}
+    footer h3{
+        font-size: 1em;
+    }
+}
